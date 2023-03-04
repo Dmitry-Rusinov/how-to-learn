@@ -409,13 +409,6 @@ margin-bottom: 16px;
   height: 100%;
 }
 
-.footer__column-heading {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 600;
-  color: white;
-}
-
 .footer__column-link {
   flex-direction: column;
   flex-wrap: wrap;
