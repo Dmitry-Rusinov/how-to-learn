@@ -16,8 +16,8 @@
     <div class="header__square-pic"></div>
     </header>
   <main class="content">
-      <section class="description">
-        <div class="two-columns">
+      <div class="description">
+        <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
 
         <div class="two-columns__main-text">
@@ -25,13 +25,11 @@
           <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
           <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
         </div>
+        </article>
       </div>
-      </section>
       <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
-
-          <h4 class="section-subtitle">Про учебу и мозг</h4>
-
+          <p class="section-subtitle">Про учебу и мозг</p>
         <div class="table">
           <div class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
@@ -71,13 +69,13 @@
       </section>
       <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
-          <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+          <p class="feynman__subtitle">Выучить и не забыть.</p>
           <a class="feynman__link" href="#">Подробнее →</a>
-          <img class="feynman__image" src="./images/feynman.png" alt="Фотогроафия Фейнмана">
+          <div class="feynman__image"></div>
       </section>
       <section class="kaufman">
           <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-          <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
+          <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
         <div class="table table_theme_dark">
           <div class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
@@ -120,7 +118,7 @@
           <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
         </div>
         </div>
-          <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="Треугольник">
+          <div class="kaufman__triangle"></div>
       </section>
     </main>
   <footer class="footer">
@@ -131,18 +129,18 @@
       </div>
       <div class="footer__column footer__column_content_info">
         <h4 class="footer__column-heading">О Практикумe</h4>
-        <div class="footer__column-links"> <!--если сделать череза тег nav, ul, li получаются едва заметные черные точки перед ссылками, котоорых в брифе нет-->
-            <div><a class="column-links" href="#">Главная</a></div>
-            <div><a class="column-links" href="#">Концепция</a></div>
-            <div><a class="column-links" href="#">Наставники</a></div>
-        </div>
+        <nav class="footer__column-links"> <!--список делаю через тег nav, что бы соблюсти семантику, ul и li не стал использовать, тк появляющиеся точки перед текстом сбросить сейчас не знаю как-->
+          <a class="footer__column-link" href="#">Главная</a>
+          <a class="footer__column-link" href="#">Концепция</a>
+          <a class="footer__column-link" href="#">Наставники</a>
+        </nav>
       </div>
       <div class="footer__column footer__column_content_social">
         <h4 class="footer__column-heading">Соцсети</h4>
         <div class="footer__column-links">
-          <div><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/youtube-icon.svg" alt="иконка ютуб"> YouTube</a></div>
-          <div><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/vk_color_white.svg" alt="иконка вконтакте"> ВКонтакте</a></div>
-          <div><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/tiktok-icon.svg" alt="иконка тикток"> TikTok</a></div>
+          <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/youtube-icon.svg" alt="иконка ютуб"> YouTube</a>
+          <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/vk_color_white.svg" alt="иконка вконтакте"> ВКонтакте</a>
+          <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/tiktok-icon.svg" alt="иконка тикток"> TikTok</a>
         </div>
       </div>
     </div>
